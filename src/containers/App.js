@@ -61,7 +61,7 @@ componentDidMount(){
         }else{
             return (
                 <div className='tc'>
-                    <h1 className='pa2 f1 grow'>ROBOFRIENDS</h1>
+                    <h1 className='f1 grow'>ROBOFRIENDS</h1>
                     <SearchBox searchChange = {this.searchBoxChange}/>
                     <Scroll>
                     {/* <CardList robots={robots}/> */}
