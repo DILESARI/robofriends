@@ -23,7 +23,7 @@ class App extends Component {
     }
 
 componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/users', { mode: 'no-cors'})
+    fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => {
         return response.json();
     })
