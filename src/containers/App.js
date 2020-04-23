@@ -55,7 +55,7 @@ componentDidMount(){
             return (
                 <div>
                 <h1 className='tc pa2 f1 grow'>ROBOFRIENDS</h1>
-                <h3 className='pa2 f4'>Loading...</h3>
+                <h3 className='pa2 f4'>Loading....</h3>
                 </div>
             )
            
