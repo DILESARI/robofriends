@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 // import {ensayo} from './ensayo';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
 import './App.css';
 
 // const state = {
@@ -64,8 +65,10 @@ componentDidMount(){
                     <h1 className='f1 grow'>ROBOFRIENDS</h1>
                     <SearchBox searchChange = {this.searchBoxChange}/>
                     <Scroll>
-                    {/* <CardList robots={robots}/> */}
-                    <CardList robotcillos ={filteredRobots}/>
+                        <ErrorBoundry>
+                            {/* <CardList robots={robots}/> */}
+                            <CardList robotcillos ={filteredRobots}/>
+                        </ErrorBoundry>
                     </Scroll>
                 </div>
             );
